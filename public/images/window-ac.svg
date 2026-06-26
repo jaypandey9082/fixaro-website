@@ -1,0 +1,10 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Window AC placeholder</title>
+  <desc id="desc">Window AC unit with grille and teal cooling airflow.</desc>
+  <rect width="640" height="480" rx="32" fill="#111820"/>
+  <rect x="142" y="116" width="356" height="214" rx="26" fill="#F5F7F8"/>
+  <rect x="178" y="154" width="128" height="138" rx="14" fill="#DDE5E8"/>
+  <path d="M202 178v90M228 178v90M254 178v90M280 178v90" stroke="#7D8A92" stroke-width="8" stroke-linecap="round"/>
+  <path d="M342 182h112M342 222h112M342 262h112" stroke="#7D8A92" stroke-width="10" stroke-linecap="round"/>
+  <path d="M198 366c58 35 124 42 198 22" stroke="#12C7C3" stroke-width="10" stroke-linecap="round"/>
+</svg>

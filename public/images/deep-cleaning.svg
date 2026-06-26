@@ -1,0 +1,13 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Deep cleaning placeholder</title>
+  <desc id="desc">AC deep cleaning with teal spray and silver unit.</desc>
+  <rect width="640" height="480" rx="32" fill="#0B0F12"/>
+  <rect x="84" y="106" width="356" height="150" rx="24" fill="#F5F7F8"/>
+  <path d="M120 198h284" stroke="#7D8A92" stroke-width="12" stroke-linecap="round"/>
+  <path d="M208 282c42 30 95 39 160 25" stroke="#6EF4EA" stroke-width="9" stroke-linecap="round"/>
+  <path d="M466 150l56 56" stroke="#12C7C3" stroke-width="18" stroke-linecap="round"/>
+  <path d="M484 223l54-54 34 34-54 54-52 18 18-52Z" fill="#151C24" stroke="#12C7C3" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="154" cy="336" r="15" fill="#12C7C3"/>
+  <circle cx="211" cy="358" r="10" fill="#6EF4EA"/>
+  <circle cx="274" cy="343" r="13" fill="#12C7C3" opacity=".75"/>
+</svg>

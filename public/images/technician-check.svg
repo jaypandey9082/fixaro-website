@@ -1,0 +1,10 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Technician check placeholder</title>
+  <desc id="desc">Technician inspection clipboard and AC check illustration.</desc>
+  <rect width="640" height="480" rx="32" fill="#0B0F12"/>
+  <rect x="88" y="106" width="302" height="126" rx="22" fill="#F5F7F8"/>
+  <path d="M126 190h228" stroke="#7D8A92" stroke-width="11" stroke-linecap="round"/>
+  <rect x="404" y="132" width="138" height="218" rx="22" fill="#151C24" stroke="#B9C2C7" stroke-width="6"/>
+  <path d="M437 184h72M437 224h72M437 264h48" stroke="#12C7C3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M152 314l44 44 92-108" stroke="#C8A45D" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Premium split AC hero illustration</title>
+  <desc id="desc">Dark premium split AC unit with teal airflow and service tools.</desc>
+  <rect width="960" height="720" rx="44" fill="#0B0F12"/>
+  <circle cx="710" cy="160" r="250" fill="#12C7C3" opacity=".12"/>
+  <circle cx="230" cy="560" r="260" fill="#C8A45D" opacity=".08"/>
+  <path d="M168 170h624c39 0 70 31 70 70v166c0 39-31 70-70 70H168c-39 0-70-31-70-70V240c0-39 31-70 70-70Z" fill="#151C24" stroke="#2C3944" stroke-width="3"/>
+  <path d="M144 235c0-13 11-24 24-24h624c13 0 24 11 24 24v48H144v-48Z" fill="#F5F7F8"/>
+  <path d="M178 328h604" stroke="#7D8A92" stroke-width="10" stroke-linecap="round"/>
+  <path d="M210 376h532" stroke="#26333D" stroke-width="16" stroke-linecap="round"/>
+  <path d="M251 427c66 58 152 78 257 60" stroke="#12C7C3" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+  <path d="M315 466c64 42 144 54 239 34" stroke="#6EF4EA" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+  <path d="M646 414l64 64 92-92" stroke="#C8A45D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="154" y="548" width="652" height="44" rx="22" fill="#111820" stroke="#2C3944"/>
+  <path d="M228 570h500" stroke="#B9C2C7" stroke-width="8" stroke-linecap="round" stroke-dasharray="34 22"/>
+</svg>
