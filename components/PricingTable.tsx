@@ -6,7 +6,7 @@ import { Clock, IndianRupee, Info, MessageCircle, ShieldCheck, Sparkles } from "
 import { useMemo, useState } from "react";
 import { PremiumButton } from "@/components/PremiumButton";
 import { SectionHeading } from "@/components/SectionHeading";
-import { serviceCategories, services, type Service, type ServiceCategory } from "@/lib/data";
+import { globalPriceNote, serviceCategories, services, type Service, type ServiceCategory } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { createWhatsAppUrl, serviceBookingMessage } from "@/lib/whatsapp";
 
@@ -73,7 +73,7 @@ export function PricingTable() {
               <Info aria-hidden="true" size={14} />
               Price note
             </span>
-            Prices shown are service charges. Spare parts and extra materials are charged only after customer approval.
+            Prices shown are service charges. {globalPriceNote}
           </div>
         </motion.div>
 
