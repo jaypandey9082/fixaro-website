@@ -42,9 +42,13 @@ Customers can tap "Use My Current Location" to add an approximate Google Maps li
 
 - Deploy from a private GitHub repo.
 - Connect the custom domain `fixarosolutions.com`.
+- DNS must support both `fixarosolutions.com` and `www.fixarosolutions.com`.
+- Expected www behavior: `https://www.fixarosolutions.com/` should redirect to the root domain or resolve correctly, and must not return 502.
 - Set `NEXT_PUBLIC_SITE_URL=https://fixarosolutions.com` in the hosting environment.
 - Test `/sitemap.xml`.
 - Test `/robots.txt`.
+- Verify canonical URLs, sitemap URLs, robots sitemap URL, Open Graph URLs, and JSON-LD URLs use `https://fixarosolutions.com`.
+- Verify Google Search Console properties for the root domain and www coverage before launch.
 - Test WhatsApp links.
 - Test call links.
 - Test the complete mobile booking journey on Android Chrome and iPhone Safari.

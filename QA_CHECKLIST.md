@@ -1,6 +1,7 @@
 # Fixaro Launch QA Checklist
 
 Domain: `fixarosolutions.com`  
+WWW: `www.fixarosolutions.com`  
 Main: `+91 91879 72801` / `tel:+919187972801`  
 Second: `+91 91879 72802` / `tel:+919187972802`  
 WhatsApp: `919187972801`
@@ -125,6 +126,17 @@ WhatsApp: `919187972801`
 - Confirm robots allows crawling and points to sitemap.
 - Confirm canonical/metadata URLs do not use localhost.
 - Confirm JSON-LD has no fake address, geo, hours, reviews, ratings, awards, or certifications.
+- Confirm Google Search Console is set up for `fixarosolutions.com`.
+- Confirm Google Search Console can inspect the homepage, sitemap, and key service pages.
+- Confirm `/sitemap.xml` returns URLs on `https://fixarosolutions.com`.
+- Confirm `/robots.txt` points to `https://fixarosolutions.com/sitemap.xml`.
+
+## 16A. WWW Domain Checks
+
+- Open `https://www.fixarosolutions.com/`.
+- Confirm www redirects to `https://fixarosolutions.com/` or resolves correctly.
+- Confirm www does not return 502.
+- Confirm Search Console coverage includes the www behavior.
 
 ## 17. Performance Checks
 
@@ -159,6 +171,7 @@ WhatsApp: `919187972801`
 - Open homepage locally.
 - Open key service pages locally.
 - Open local SEO pages locally.
+- Open `/not-found-test` locally and confirm the 404 page appears.
 - Test Call Now.
 - Test WhatsApp.
 - Fill booking form.

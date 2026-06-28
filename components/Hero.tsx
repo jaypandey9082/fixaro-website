@@ -5,7 +5,7 @@ import { businessInfo } from "@/lib/data";
 import { createWhatsAppUrl } from "@/lib/whatsapp";
 
 const trustBadges = [
-  { label: "Same-Day Slots", icon: Clock },
+  { label: "Same-Day Slots Subject to Availability", icon: Clock },
   { label: "Warranty Up to 60 Days", icon: ShieldCheck },
   { label: "Transparent Pricing", icon: IndianRupee },
   { label: "Trained Technicians", icon: Wrench },

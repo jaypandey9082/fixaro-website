@@ -133,18 +133,18 @@ export function ServiceDetailContent({ service, faqs }: { service: Service; faqs
             </InfoSection>
 
             <InfoSection title="How Booking Works" icon={MessageCircle}>
-              <ol className="grid gap-3 sm:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-3">
                 {["Share your area and AC type", "Fixaro confirms availability", "Technician checks and completes approved work"].map(
                   (step, index) => (
-                    <li key={step} className="glass-panel rounded-2xl p-4 text-sm leading-6 text-silver">
+                    <article key={step} className="glass-panel rounded-2xl p-4 text-sm leading-6 text-silver">
                       <span className="mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-aqua/20 bg-aqua/10 text-sm font-extrabold text-aqua">
                         {index + 1}
                       </span>
                       {step}
-                    </li>
+                    </article>
                   ),
                 )}
-              </ol>
+              </div>
             </InfoSection>
 
             <RelatedServices service={service} />

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CheckCircle2, MapPin, MessageCircle, Phone, ShieldCheck, Sparkles } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { PremiumButton } from "@/components/PremiumButton";
-import { businessInfo, globalPriceNote, serviceAreas, services } from "@/lib/data";
+import { businessInfo, featuredServiceAreas, globalPriceNote, serviceAreas, services } from "@/lib/data";
 import type { FAQItem } from "@/lib/data";
 import { createWhatsAppUrl, serviceBookingMessage } from "@/lib/whatsapp";
 import type { LocalSeoPageConfig } from "@/lib/seo";
@@ -14,6 +14,8 @@ export function LocalSeoPage({ config, faqs }: { config: LocalSeoPageConfig; faq
     .filter(Boolean)
     .slice(0, 4);
   const whatsappUrl = createWhatsAppUrl(config.whatsappMessage);
+  const featuredAreaSet = new Set<string>(featuredServiceAreas);
+  const moreServiceAreas = serviceAreas.filter((area) => !featuredAreaSet.has(area));
 
   return (
     <>
@@ -205,13 +207,28 @@ export function LocalSeoPage({ config, faqs }: { config: LocalSeoPageConfig; faq
 
           <section>
             <h2 className="text-3xl font-extrabold text-white">Bangalore Service Areas</h2>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {serviceAreas.map((area) => (
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-silver">
+              Fixaro covers many Bangalore localities. Start with these commonly served areas, or open the full area list below.
+            </p>
+            <div className="mt-6 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {featuredServiceAreas.map((area) => (
                 <span key={area} className="rounded-full border border-white/10 bg-white/[0.045] px-4 py-2 text-sm font-semibold text-silver">
                   {area}
                 </span>
               ))}
             </div>
+            <details className="mt-4 rounded-2xl border border-white/10 bg-white/[0.035] p-4">
+              <summary className="cursor-pointer text-sm font-extrabold text-aqua marker:text-gold">
+                More Bangalore areas
+              </summary>
+              <div className="mt-4 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {moreServiceAreas.map((area) => (
+                  <span key={area} className="rounded-full border border-white/10 bg-white/[0.045] px-4 py-2 text-sm font-semibold text-silver">
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </details>
             <p className="mt-4 flex gap-2 text-sm leading-6 text-muted">
               <MapPin aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-aqua" />
               Availability depends on technician slots and exact location.

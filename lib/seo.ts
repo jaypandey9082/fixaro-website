@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { businessInfo, featuredServiceAreas, services, type FAQItem, type Service } from "@/lib/data";
+import { businessInfo, featuredServiceAreas, services, warrantyExclusion, type FAQItem, type Service } from "@/lib/data";
 
 export const siteConfig = {
   name: "Fixaro AC Service Company",
@@ -188,7 +188,7 @@ export function getServiceFaqs(service: Service): FAQItem[] {
   const warrantyAnswer =
     service.warranty === "No Warranty"
       ? `${service.name} has no warranty because it is a diagnosis visit.`
-      : `${service.warranty}. Warranty covers service workmanship only. Spare parts, physical damage, voltage fluctuations, rodent damage and misuse are not covered.`;
+      : `${service.warranty}. ${warrantyExclusion}`;
 
   const faqs: FAQItem[] = [
     {

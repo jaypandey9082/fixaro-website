@@ -136,6 +136,7 @@ const quickChips = [
 const supportMessage = "Hi Fixaro, I want to book an AC service. Please share available slots.";
 const otherAreaOption = "Other";
 
+// TODO(launch-safe refactor): Split this form into booking subcomponents after a dedicated mobile booking regression pass.
 function todayInputValue() {
   const today = new Date();
   today.setMinutes(today.getMinutes() - today.getTimezoneOffset());

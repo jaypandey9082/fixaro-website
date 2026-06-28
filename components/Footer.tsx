@@ -130,10 +130,8 @@ export function Footer() {
             <p>© {year} {businessInfo.fullName}. All rights reserved.</p>
             <p className="flex gap-2 leading-6 text-[#E8D7A8]">
               <ShieldCheck aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-              Warranty covers service workmanship only. Spare parts, physical damage, voltage fluctuations, rodent damage
-              and misuse are not covered.
+              {warrantyExclusion}
             </p>
-            <p className="leading-6">{warrantyExclusion}</p>
             <p>Brand names are used only to indicate service compatibility.</p>
           </div>
           <a
