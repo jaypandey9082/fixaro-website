@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import { businessInfo, featuredServiceAreas, services, warrantyExclusion, type FAQItem, type Service } from "@/lib/data";
 
+const productionSiteUrl = "https://fixarosolutions.com";
+const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+const siteUrl =
+  configuredSiteUrl && !/(localhost|127\.0\.0\.1|0\.0\.0\.0)/i.test(configuredSiteUrl)
+    ? configuredSiteUrl
+    : productionSiteUrl;
+
 export const siteConfig = {
   name: "Fixaro AC Service Company",
   shortName: "Fixaro",
   description:
     "Premium AC service, repair, gas refilling and installation in Bangalore with clear pricing, clean work and written warranty terms.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://fixarosolutions.com",
+  url: siteUrl,
   city: "Bangalore",
   phone: "+91 91879 72801",
   defaultOgImage: "/images/ac-hero.svg",
@@ -367,6 +374,16 @@ export function getLocalBusinessJsonLd(): Record<string, unknown> {
     priceRange: "₹₹",
     description: siteConfig.description,
     areaServed: ["Bangalore", "Bengaluru", ...featuredServiceAreas],
+  };
+}
+
+export function getWebsiteJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.name,
+    alternateName: siteConfig.shortName,
+    url: `${siteConfig.url}/`,
   };
 }
 

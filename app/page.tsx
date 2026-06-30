@@ -8,11 +8,12 @@ import { ServiceCategories } from "@/components/ServiceCategories";
 import { ServiceAreas } from "@/components/ServiceAreas";
 import { TrustBar } from "@/components/TrustBar";
 import { WarrantySection } from "@/components/WarrantySection";
-import { getLocalBusinessJsonLd } from "@/lib/seo";
+import { getLocalBusinessJsonLd, getWebsiteJsonLd } from "@/lib/seo";
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={getWebsiteJsonLd()} />
       <JsonLd data={getLocalBusinessJsonLd()} />
       <Hero />
       <TrustBar />

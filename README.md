@@ -49,6 +49,7 @@ Customers can tap "Use My Current Location" to add an approximate Google Maps li
 - Test `/robots.txt`.
 - Verify canonical URLs, sitemap URLs, robots sitemap URL, Open Graph URLs, and JSON-LD URLs use `https://fixarosolutions.com`.
 - Verify Google Search Console properties for the root domain and www coverage before launch.
+- After deployment, inspect `https://fixarosolutions.com/` in Google Search Console and request indexing. Google may take days or weeks to update the favicon in search results.
 - Test WhatsApp links.
 - Test call links.
 - Test the complete mobile booking journey on Android Chrome and iPhone Safari.
